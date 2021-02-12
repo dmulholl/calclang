@@ -2,29 +2,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "TermCalc",
+    name: "CalcLang",
     products: [
         .library(
             name: "CalcLang",
             targets: ["CalcLang"]),
     ],
-    dependencies: [
-        .package(
-            url: "https://github.com/dmulholl/argparser.git",
-            from: "2.0.0"
-        ),
-        .package(
-            url: "../termutils",
-            from: "0.1.0"
-        ),
-    ],
     targets: [
         .target(
             name: "CalcLang",
             dependencies: []),
-        .target(
-            name: "TermCalc",
-            dependencies: ["CalcLang", "ArgParser", "TermUtils"]),
         .testTarget(
             name: "CalcLangTests",
             dependencies: ["CalcLang"]),
