@@ -2,7 +2,6 @@ import XCTest
 @testable import CalcLang
 
 class ScannerTests: XCTestCase {
-
     func testEmptyString() {
         let scanner = Scanner("")
         let tokens = try! scanner.scan()
