@@ -1,3 +1,3 @@
 # CalcLang
 
-A calculator language.
+An interpreter for a calculator language.
